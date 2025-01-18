@@ -1,5 +1,5 @@
 Description: Downloads the latest version of OWASP ZAP
-Identifier: com.csolom.download.zed-ap
+Identifier: com.github.csolom.download.zed-ap
 MinimumVersion: "2.3"
 
 Input:
