@@ -1,5 +1,5 @@
 Description: Downloads the latest version of Visual Studio Code
-Identifier: com.github.csolom.download.VisualStudioCode
+Identifier: com.csolom.download.VisualStudioCode
 MinimumVersion: "2.3"
 
 Input:

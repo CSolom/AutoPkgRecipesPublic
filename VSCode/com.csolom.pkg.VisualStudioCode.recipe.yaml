@@ -1,7 +1,7 @@
 Description: Creates the pkg for the latest version of Visual Studio Code
-Identifier: com.github.csolom.pkg.VisualStudioCode
+Identifier: com.csolom.pkg.VisualStudioCode
 MinimumVersion: "2.3"
-ParentRecipe: com.github.csolom.download.VisualStudioCode
+ParentRecipe: com.csolom.download.VisualStudioCode
 
 Input:
   NAME: Visual Studio Code
