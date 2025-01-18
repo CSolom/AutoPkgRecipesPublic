@@ -4,8 +4,8 @@ MinimumVersion: "2.3"
 ParentRecipe: com.github.csolom.download.zed-ap
 
 Input:
-  NAME: OWASP Zed Attack Proxy
-  CASK_NAME: owasp-zap
+  NAME: Zed Attack Proxy
+  CASK_NAME: zap
 
 # Not passing arch since this cask doesn't support it
 # Grab the download and create a pkg
