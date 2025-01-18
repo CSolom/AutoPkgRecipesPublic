@@ -1,7 +1,7 @@
 Description: Downloads the latest version of OWASP ZAP
-Identifier: com.csolom.pkg.zed-ap
+Identifier: com.github.csolom.pkg.zed-ap
 MinimumVersion: "2.3"
-ParentRecipe: com.githib.csolom.download.zap
+ParentRecipe: com.github.csolom.download.zap
 
 Input:
   NAME: OWASP Zed Attack Proxy
