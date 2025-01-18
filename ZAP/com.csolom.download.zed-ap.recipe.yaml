@@ -1,0 +1,19 @@
+Description: Downloads the latest version of OWASP ZAP
+Identifier: com.csolom.download.zed-ap
+MinimumVersion: "2.3"
+
+Input:
+  NAME: Zed Attack Proxy
+  CASK_NAME: zap
+
+# Grab the install via HomebrewCaskURL
+Process:
+  - Processor: com.csolom.SharedProcessors/HomebrewCaskURL
+    Arguments:
+      cask_name: "%CASK_NAME%"
+
+  - Processor: URLDownloader
+    Arguments:
+      filename: "%NAME%.dmg"
+
+  - Processor: EndOfCheckPhase

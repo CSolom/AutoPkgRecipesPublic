@@ -1,0 +1,13 @@
+Description: Downloads the latest version of OWASP ZAP
+Identifier: com.csolom.pkg.zed-ap
+MinimumVersion: "2.3"
+ParentRecipe: com.csolom.download.zap
+
+Input:
+  NAME: OWASP Zed Attack Proxy
+  CASK_NAME: owasp-zap
+
+# Not passing arch since this cask doesn't support it
+# Grab the download and create a pkg
+Process:
+  - Processor: AppPkgCreator
