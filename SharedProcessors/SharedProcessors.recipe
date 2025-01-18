@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Recipe stub for any Shared Processors in this directory.</string>
 	<key>Identifier</key>
-	<string>com.aw.endpoint.SharedProcessors</string>
+	<string>com.csolom.SharedProcessors</string>
 	<key>Input</key>
 	<dict/>
 	<key>MinimumVersion</key>
