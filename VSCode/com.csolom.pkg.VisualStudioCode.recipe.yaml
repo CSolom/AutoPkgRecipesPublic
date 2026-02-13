@@ -4,7 +4,7 @@ MinimumVersion: "2.3"
 ParentRecipe: com.csolom.download.VisualStudioCode
 
 Input:
-  NAME: Visual Studio Code
+  NAME: "Visual Studio Code"
   BUNDLE_ID: com.microsoft.VSCode
 
 Process:
@@ -14,12 +14,11 @@ Process:
         Applications: "0775"
       pkgroot: "%RECIPE_CACHE_DIR%/%NAME%"
 
-  - Processor: Unarchiver
-    Arguments: 
-      archive_path: "%pathname%"
-      destination_path: "%pkgroot%/Applications/"
-      purge_destination: True
-  
+  - Processor: Copier
+    Arguments:
+      destination_path: "%pkgroot%/Applications/Visual Studio Code.app"
+      source_path: "%RECIPE_CACHE_DIR%/downloads/Visual Studio Code.dmg/Visual Studio Code.app"
+
   - Processor: Versioner
     Arguments:
       plist_version_key: "CFBundleShortVersionString"
